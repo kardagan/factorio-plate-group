@@ -1,0 +1,8 @@
+# Zips de release / packaging
+*.zip
+
+# Sortie de build.sh
+/dist/
+
+# Scratch
+/tmp/

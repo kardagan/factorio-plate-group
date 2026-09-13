@@ -1,0 +1,16 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2026-09-13
+  Features:
+    - New "Plates & Signs" tab in the crafting menu, gathering the signage plates that mods
+      otherwise scatter at the bottom of the Logistics tab.
+    - Out of the box it collects Text Plates (subgroup "textplates") and Display Plates
+      (subgroup "display-plates"). Both are optional dependencies: the mod loads fine with
+      only one of them, or with neither.
+    - Startup setting "Subgroups to move": a comma-separated list of item-subgroup names, so any
+      other mod's plates can be pulled into the tab without touching the code.
+    - Startup setting "Individual items to move": a comma-separated list of item names, for mods
+      that do not declare a dedicated subgroup. They land in a catch-all subgroup.
+    - Startup setting "Group order string" to decide where the tab sits among the other tabs
+      (default "d-b", i.e. after Combat and before Fluids).
+    - English and French locale.

@@ -1,0 +1,13 @@
+{
+  "name": "plate-group",
+  "version": "1.0.0",
+  "title": "Plate Group",
+  "author": "vador",
+  "factorio_version": "2.1",
+  "description": "Regroupe les plaques de signalisation (Text Plates, Display Plates, ...) dans un onglet dedie du menu de craft. Configurable : n'importe quel sous-groupe ou item peut etre deplace dans le groupe via les parametres de demarrage.",
+  "dependencies": [
+    "base >= 2.0.0",
+    "? textplates",
+    "? DisplayPlatesForked"
+  ]
+}
