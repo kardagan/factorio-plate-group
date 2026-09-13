@@ -9,26 +9,6 @@ any other mod's plates can be pulled in from the mod settings menu, without touc
 Startup settings are read at load time, so a change applies on the next prototype reload — from the
 menu, not mid-save.
 
-## Why a mod at all?
-
-Item groups are *prototypes*: they only exist during the `data` stage, at load time. The runtime API
-(`control.lua`) can read them but never create or modify one, so there is no way to build your own
-tabs from inside a running game. A mod is mandatory — but a single mod can define any number of
-groups and be driven entirely by startup settings, which is what this one does.
-
-## What it does
-
-Both target mods already declare a dedicated subgroup, parked in vanilla's `logistics` group:
-
-| Mod | Subgroup | Declared in |
-| --- | --- | --- |
-| Text Plates | `textplates` | `prototype/item-groups.lua` |
-| Display Plates | `display-plates` | `data.lua` |
-
-So the mod does not touch the items one by one — it reassigns the `group` of those subgroups in
-`data-final-fixes` (i.e. after every other mod has had its say). Items keep their relative order,
-and recipes follow their main product automatically.
-
 Both are **optional dependencies**: the mod loads fine with only one of them installed, or neither.
 A subgroup named in the settings but absent from the game is skipped with a line in the log.
 

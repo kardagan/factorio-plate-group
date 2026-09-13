@@ -10,14 +10,6 @@ A crafting-menu tab that gathers the **signage plates** — [Text Plates](https:
 
 Unlike the usual one-mod-per-group patches, **the tab's content is driven by startup settings**: any other mod's plates can be pulled in from the mod settings menu, without touching a line of Lua. Startup settings are read at load time, so a change applies on the next prototype reload — you edit it from the menu, not mid-save.
 
-## Why a mod at all?
-
-Item groups are *prototypes*: they only exist during the data stage, at load time. The runtime API can read them but never create or modify one, so there is no way to build your own crafting tabs from inside a running game. A mod is mandatory — but a single mod can define any number of groups and be driven entirely by startup settings, which is what this one does.
-
-## What it does
-
-Both target mods already declare their own item subgroup, parked in vanilla's Logistics group. This mod simply reassigns those subgroups to a new group, in `data-final-fixes` — after every other mod has had its say. Items keep their relative order, and recipes follow their main product automatically.
-
 Text Plates and Display Plates are **optional dependencies**: the mod loads fine with only one of them installed, or with neither. A subgroup named in the settings but absent from the game is skipped, with a line in the log.
 
 ## Settings (startup)
