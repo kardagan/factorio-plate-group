@@ -2,11 +2,12 @@
   "name": "plate-group",
   "version": "1.0.0",
   "title": "Plate Group",
-  "author": "vador",
+  "author": "kardagan",
+  "homepage": "https://github.com/kardagan/factorio-plate-group",
   "factorio_version": "2.1",
-  "description": "Regroupe les plaques de signalisation (Text Plates, Display Plates, ...) dans un onglet dedie du menu de craft. Configurable : n'importe quel sous-groupe ou item peut etre deplace dans le groupe via les parametres de demarrage.",
+  "description": "Gathers the signage plates (Text Plates, Display Plates, ...) into a dedicated crafting tab instead of the bottom of Logistics. Configurable: any subgroup or item can be moved into the tab from the startup settings, no code change needed.",
   "dependencies": [
-    "base >= 2.0.0",
+    "base >= 2.1.0",
     "? textplates",
     "? DisplayPlatesForked"
   ]
