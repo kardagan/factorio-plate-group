@@ -52,8 +52,12 @@ existing save takes the change without trouble — nothing here depends on the g
 
 ## Icon
 
-`graphics/plate-group.png` is an original 128×128 RGBA placeholder (declared with `icon_size = 128`, like vanilla item groups). Overwrite the file to change the
-tab icon — no code change needed.
+`graphics/plate-group.png` is a 192×128 file: the 128 px icon followed by its 64 px mipmap, the way
+vanilla item-group icons are built (`base/graphics/item-group/*.png`). Factorio infers the mipmap
+count from the file width, so the prototype only declares `icon_size = 128`.
+
+`docs/icon-source.png` is the 1254×1254 master the two derivatives are cut from; `thumbnail.png`
+(144×144, opaque) is the mod-portal vignette.
 
 ## Credits
 

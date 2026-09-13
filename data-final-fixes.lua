@@ -34,9 +34,9 @@ end
 local subgroup_names = parse_list(setting("plate-group-subgroups"))
 local item_names     = parse_list(setting("plate-group-items"))
 
--- Icone du groupe : asset maison, embarque pour que le groupe ait la meme tete
--- quels que soient les mods actifs. Pour la remplacer, il suffit d'ecraser le
--- PNG (128x128 RGBA) : aucune modification de code necessaire.
+-- Icone du groupe. Le PNG fait 192x128 : l'icone 128 px suivie de son mipmap
+-- 64 px, comme les icones de groupe vanilla (base/graphics/item-group/*.png).
+-- Factorio deduit le nombre de mipmaps de la largeur du fichier.
 local icon, icon_size = "__plate-group__/graphics/plate-group.png", 128
 
 data:extend({
