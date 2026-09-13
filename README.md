@@ -4,8 +4,10 @@ A crafting-menu tab that gathers the **signage plates** — [Text Plates](https:
 by *Earendel & gheift* and [Display Plates](https://mods.factorio.com/mod/DisplayPlatesForked)
 by *Kingfisher95 & Flydiverny* — instead of leaving them buried at the bottom of the Logistics tab.
 
-Unlike the usual one-mod-per-group patches, the tab's content is **configurable from the mod
-settings**: any other mod's plates can be pulled in without touching a line of Lua.
+Unlike the usual one-mod-per-group patches, the tab's content is **driven by startup settings**:
+any other mod's plates can be pulled in from the mod settings menu, without touching a line of Lua.
+Startup settings are read at load time, so a change applies on the next prototype reload — from the
+menu, not mid-save.
 
 ## Why a mod at all?
 

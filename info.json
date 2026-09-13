@@ -5,7 +5,7 @@
   "author": "kardagan",
   "homepage": "https://github.com/kardagan/factorio-plate-group",
   "factorio_version": "2.1",
-  "description": "Gathers the signage plates (Text Plates, Display Plates, ...) into a dedicated crafting tab instead of the bottom of Logistics. Configurable: any subgroup or item can be moved into the tab from the startup settings, no code change needed.",
+  "description": "Gathers the signage plates (Text Plates, Display Plates, ...) into a dedicated crafting tab instead of the bottom of Logistics. Which subgroups and items land in the tab is driven by startup settings, so other mods' plates can be added from the mod settings menu -- no Lua to edit. Item groups only exist at load time, so the change applies on the next prototype reload, not mid-save.",
   "dependencies": [
     "base >= 2.1.0",
     "? textplates",
